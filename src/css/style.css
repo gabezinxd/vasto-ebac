@@ -1,0 +1,77 @@
+/* * {
+    border: 1px solid red;
+} */
+
+body {
+    text-align: center;
+}
+
+h1 {
+    padding: 2rem 0 2rem 0;
+    color: rgb(137, 58, 211);
+    font-family: Outfit;
+    font-weight: 600;
+}
+
+.paragrafo {
+    font-family: sans-serif;
+    padding: 0 0 4rem 0;
+}
+
+.botao {
+    color: white;
+    text-decoration: none;
+    border-radius: 2rem;
+    background-color: orangered;
+    padding: 1rem 2rem;
+    font-family: sans-serif;
+    transition: background-color 300ms;
+}
+
+.botao:hover {
+    background-color: rgb(137, 58, 211);
+}
+
+.rodape {
+    padding: 5rem 0 0 0;
+}
+
+header, .imagem, h1, .paragrafo, .botao, .rodape {
+    animation: appear 1s backwards;
+}
+
+header {
+    animation-delay: 0.3s;
+}
+ 
+.imagem {
+    animation-delay: 0.5s;
+}
+
+h1 {
+    animation-delay: 0.8s;
+}
+
+.paragrafo {
+    animation-delay: 1.1s;
+}
+
+.botao {
+    animation-delay: 1.5s;
+}
+
+.rodape {
+    animation-delay: 1.7s;
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+    }
+}
+
+@media (width < 40rem) {
+    html {
+        font-size: 70%;       
+    }
+}
